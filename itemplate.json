@@ -15135,7 +15135,7 @@
       "description": "[WireGuard\u00ae](https://www.wireguard.com/) is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.",
       "platform": "linux",
       "logo": "https://www.wireguard.com/img/wireguard.svg",
-      "image": "linuxserver/wireguard:latest",
+      "image": "ghcr.io/wg-easy/wg-easy",
       "env": [
         {
           "name": "PUID",
@@ -15152,7 +15152,7 @@
         {
           "name": "TZ",
           "label": "TZ",
-          "default": "Europe/Amsterdam",
+          "default": "Asia/Kolkata",
           "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
         },
         {
@@ -15182,7 +15182,7 @@
         {
           "name": "INTERNAL_SUBNET",
           "label": "INTERNAL_SUBNET",
-          "default": "10.13.13.0",
+          "default": "10.0.10.1",
           "description": "Internal subnet for the wireguard and server and peers (only change if it clashes). Used in server mode."
         },
         {
